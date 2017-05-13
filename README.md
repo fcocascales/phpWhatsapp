@@ -29,7 +29,7 @@
 
 
 #### HTML code
-```text/html
+```html
 <div class="user user0">
 	<div>
 		<div class="text"><strong>Songoku</strong></div>
