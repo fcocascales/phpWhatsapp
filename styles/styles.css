@@ -1,0 +1,54 @@
+body {
+	background-color:#ddd;
+  background-image:url(background1.jpg);
+	font-family:sans-serif;
+	width:18cm;
+	margin:0 auto;
+}
+h1 { text-align:center; }
+img { max-width:8cm; max-height:8cm; }
+img.emoticon { height:1em; }
+
+.date>div, .user>div {
+	box-shadow:1px 1px 1px #999;
+	border-radius:8px;
+	display:inline-block;
+	position:relative;
+}
+
+.date {	text-align:center; margin:1.5em; }
+.date>div {	padding:0.5em 1em; background-color:#cff; color:#666; font-size:0.9em; }
+
+.user {	margin:0.5em 0; }
+.user>div { padding:0.5em 1em 0.2em 1em; }
+
+.user0 { margin-left:10%; text-align:right; }
+.user0>div { background-color:#cfc; border-top-right-radius:0; }
+
+.user1 { margin-right:10%; text-align:left; }
+.user1>div { background-color:#fff; border-top-left-radius:0; }
+
+.user0>div:after, .user1>div:before { position:absolute; top:-0.3em;
+}
+.user0>div:after { content:"◤ ";right:-0.6em; color:#cfc; /* ◤ ▶ */
+	text-shadow:1px 1px 1px #999;
+}
+.user1>div:before { content:" ◥";left:-0.6em; color:#fff; /* ◥ ◀ */
+	text-shadow:-0.5px 0.5px 1px #999;
+}
+
+.text { }
+.time {
+	text-align:right;
+	color:#666;
+	font-size:0.8em;
+	padding-top:0.2em;
+}
+
+@media print {
+  body { background-color:#fff; background-image:none; }
+	.user0>div { background-color:#dfd; }
+	.user1>div { background-color:#eef; }
+	.user0>div:after { color:#dfd; text-shadow:none; top:-0.4em; }
+	.user1>div:before { color:#eef; text-shadow:none; top:-0.4em; }
+}
