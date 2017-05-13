@@ -16,6 +16,9 @@
     <li><a href="form.php">Submit a chat&hellip;</a></li>
     <li><a href="upload.php">Upload a zipped chat&hellip;</a></li>
     <li><a href="all.php">All uploads&hellip;</a></li>
-  </ul>  
+  </ul>
+  <p>
+    <a href="private"><del>private</del></a>
+  </p>
 </body>
 </html>
